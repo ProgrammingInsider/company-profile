@@ -1,21 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&display=swap');
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background:rgb(255,255,255);
+  --sectionBg:rgb(245,246,249);
+  --primary: #263676;
+  --secondary: #282f3b;
+  --para: rgb(74, 78, 86);
+  --active-link: rgb(7, 133, 134);
+  --lower-footer: rgb(31,37,48);
+  --footer-text:rgb(170, 175, 184);
+  --white-text:rgb(255, 255, 255);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: "Inter", serif;
+  background-color: var(--background);
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+}
+
+h1, h2, h3, h4, h5, h6, .navLink{
+  font-family: "League Spartan", serif;
+}
+
+p{
+  font-family: "Inter", serif;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+@layer utilities{
+  .background{
+    background-color: var(--background);
+  }
+
+  .primaryBg{
+    background-color: var(--primary);
+  }
+
+  .primaryText{
+    color: var(--primary);
+  }
+
+  .secondaryBg{
+    background-color: var(--secondary);
+  }
+
+  .secondaryText{
+    color: var(--secondary);
+  }
+
+  .para{
+    color: var(--para);
+  }
+
+  .heading{
+    color: var(--secondary);
+  }
+
+  .activeLink{
+    color: var(--active-link);
+  }
+
+  .navLink{
+    text-transform: capitalize;
+  }
+
+  .sectionBg{
+    background-color: var(--sectionBg)
+  }
+
+  .bottomFooterBg{
+    background-color: var(--lower-footer)
+  }
+
+  .footerText{
+    color: var(--footer-text)
+  }
+
+  .footerHeading{
+    color: var(--white-text);
+    position: relative;
+    padding-bottom: .7em;
+  }
+
+  .footerHeading::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left:0;
+    height: 3px;
+    width: 20%;
+    background-color: var(--primary)
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components{
+  .sectionName {
+    @apply primaryText text-2xl mb-2 relative flex items-center justify-center text-nowrap;
+}
+
+.sectionName::before,
+.sectionName::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 1px; 
+    background-color: var(--primary);
+}
+
+.sectionName::before {
+    left: -30px;
+}
+.sectionName::after {
+    right: -30px; 
+}
+
+.sectionHeader {
+  @apply heading mb-3 sm:text-4xl leading-[38px] text-4xl font-semibold text-center;
+}
+
+.para li {
+  list-style: none;
+  position: relative;
+  padding-left: 24px; 
+}
+
+.para li::before {
+  content: "○"; 
+  position: absolute;
+  left: 0;
+  font-size: 1.6em; 
+  color: var(--para); 
+}
+
+.whyusCard{
+  position: relative;
+  
+}
+.whyusCard::before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: -8px;
+    width: 15px;
+    height: 15px;
+    border: 1px solid var(--para);
+    @apply border-gray-300;
+    border-radius: 50%; 
+}
+
 }
