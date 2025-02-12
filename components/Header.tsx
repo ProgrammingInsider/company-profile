@@ -16,6 +16,7 @@ const Header = () => {
         { id: "hero", name: "Home" },
         { id: "about", name: "About Us" },
         { id: "service", name: "Services" },
+        { id: "work", name: "Our Works" },
         { id: "whyus", name: "Why Us" },
         { id: "contact", name: "Contact Us" },
     ];
@@ -65,7 +66,7 @@ const Header = () => {
             </div>
 
             {/* Header Section */}
-            <div className={`lg:flex justify-between items-center background w-full overflow-hidden  z-50 ${isSticky ? "fixed top-0 z-50 rounded-none h-28 shadow-md" : "max-w-7xl lg:absolute right-0 lg:rounded-s-full h-36 md:h-24"}`}>
+            <div className={`lg:flex justify-between items-center background w-full overflow-hidden z-50 ${isSticky ? "fixed top-0 z-50 rounded-none h-28 shadow-md" : "max-w-7xl lg:absolute right-0 lg:rounded-s-full h-36 md:h-24"}`}>
                 <div className="lg:flex h-full w-full max-w-7xl px-4 mx-auto">
                     {/* <div className="lg:rounded-s-full bg-yellow-200 flex justify-center items-center  z-10">
                     </div> */}

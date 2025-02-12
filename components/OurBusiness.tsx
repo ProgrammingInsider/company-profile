@@ -39,7 +39,9 @@ const OurBusiness = () => {
 
             <div className='col-span-1 w-11/12 mx-auto flex flex-col gap-8'>
                 <div className='flex flex-col justify-center items-center background text-center p-7 h-72 md:h-auto rounded-xl'>
-                    <MdOutlineRemoveRedEye  className='primaryText text-7xl mb-6' />
+                    <div>
+                        <MdOutlineRemoveRedEye  className='primaryText text-7xl mb-6' />
+                    </div>
                     <h1 className='secondaryText text-3xl font-semibold leading-[30px] mb-3'>Our Vision</h1>
                     <p className='para text-sm sm:text-base leading-[24px]'>To become Ethiopia’s leading digital transformation partner, enabling businesses, industries, and governments to operate efficiently, scale rapidly, and compete globally through innovative technology solutions.</p>
                 </div>

@@ -1,10 +1,10 @@
 import AboutUs from "@/components/AboutUs"
+import Portfolio from "@/components/Portfolio"
 import ContactUs from "@/components/ContactUs"
 import Hero from "@/components/Hero"
 import OurBusiness from "@/components/OurBusiness"
 import OurServices from "@/components/OurServices"
 import WhyUs from "@/components/WhyUs"
-
 
 const Home = () => {
   return <>
@@ -12,6 +12,7 @@ const Home = () => {
     <AboutUs/>
     <OurServices/>
     <OurBusiness/>
+    <Portfolio/>
     <WhyUs/>
     <ContactUs/>
   </>
