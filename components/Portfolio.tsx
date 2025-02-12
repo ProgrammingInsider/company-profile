@@ -53,6 +53,15 @@ const Portfolio = () => {
                 </div>
               </div>
 
+              <div onMouseEnter={()=>setIndex(4)} onMouseLeave={()=>setIndex(-1)} className='h-96 overflow-hidden rounded-md relative col-span-1 shadow-md m-auto flex'>
+                <Image src={'/images/schoolmanagementsystem.jpg'} className='object-cover' width={1080} height={1080} alt='Truck Management System'/>
+                
+                <div className={`absolute bottom-0 left-0 right-0 primaryBg opacity-80 flex flex-col  justify-center items-center gap-4 transition-all duration-500 ease-in-out ${(index === 4) ? "top-0 px-4 py-32" : "h-14" }`}>
+                  <h1 className='text-white text-2xl'>School Management System</h1>
+                {(index === 4) && <p className='m-auto text-sm text-white'>A web-based platform designed to streamline school operations, including student enrollment, attendance tracking, grade management, fee collection, and communication between teachers, students, and parents. It enhances efficiency, reduces paperwork, and improves the overall learning experience.</p>}
+                </div>
+              </div>
+
           </div>
       </div>
     </div>
