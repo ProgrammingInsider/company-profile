@@ -57,7 +57,7 @@ const Header = () => {
             {/* Top Contact Bar */}
             <div className="secondaryBg flex flex-col gap-2 justify-center items-center footerText p-4 md:flex-row md:justify-between md:px-20 md:p-3">
                 <div className="flex items-center text-sm">
-                    <MdEmail className="mr-2"/>info@amgholdingsplc.com
+                    <MdEmail className="mr-2"/>ratechnologies@gmail.com
                 </div>
                 <div className="flex gap-3 items-center text-sm">
                     <span className="flex gap-1 items-center"><FaPhoneAlt className="mr-2" />+251922112208</span>

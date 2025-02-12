@@ -13,7 +13,7 @@ const heroContent = [
   {
     image: "/images/company-hero-1.jpg",
     heading: "Our Companies",
-    para: "At [Your Company Name], we specialize in crafting custom digital solutions that solve real business challenges for businesses, industries, and government agencies.",
+    para: "At RA technologies, we specialize in crafting custom digital solutions that solve real business challenges for businesses, industries, and government agencies.",
     href: "#about",
     linkText: "About Us",
   },

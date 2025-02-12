@@ -24,7 +24,7 @@ const OurBusiness = () => {
             <div className='col-span-1 flex flex-col justify-center items-center background text-center p-7 min-h-96 md:h-auto rounded-xl w-11/12 mx-auto'>
                     <IoDiamondOutline  className='primaryText text-7xl mb-6' />
                     <h1 className='secondaryText text-3xl font-semibold leading-[30px] mb-3'>Our Core Values</h1>
-                    <p className='para text-sm sm:text-base leading-[24px]'>At [Your Company Name], our values are the foundation of everything we do, guiding our actions and decisions to achieve excellence and drive success.</p>
+                    <p className='para text-sm sm:text-base leading-[24px]'>At RA technologies, our values are the foundation of everything we do, guiding our actions and decisions to achieve excellence and drive success.</p>
                     <ul typeof='circle' className='para text-left w-full text-base flex flex-col gap-2 mt-6'>
                         <li>Excellence </li>
                         <li>Innovation </li>

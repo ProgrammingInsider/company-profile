@@ -58,7 +58,7 @@ const ContactUs = () => {
             </div>
             <div>
               <h1 className="secondaryText text-xl mb-2">General Enquires</h1>
-              <p className="para text-sm sm:text-base">Phone: +251-0922112208 & Email: info@amgholdingsplc.com</p>
+              <p className="para text-sm sm:text-base">Phone: +251-922112208/ +251-924434904 & Email: ratechnologies@gmail.com</p>
             </div>
           </div>
           <div className="flex flex-col justify-center items-center gap-2 border border-gray-200 p-4 my-5 rounded-lg mx-auto">
